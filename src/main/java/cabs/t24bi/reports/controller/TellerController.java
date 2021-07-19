@@ -1,4 +1,4 @@
 package cabs.t24bi.reports.controller;
 
-public class VoltageController {
+public class TellerController {
 }
