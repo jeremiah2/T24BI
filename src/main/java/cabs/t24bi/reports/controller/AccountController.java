@@ -19,12 +19,12 @@ public class AccountController {
     @Autowired
     AccountService accountService;
 
-    // Fetch all user records
+    // Fetch all Account records
     @GetMapping
     public List<ACCOUNT> getAllAccounts(){
         return accountService.getAllAccounts();
     }
-    // Fetch single user
+    // Fetch single Account
     @GetMapping("/{id}")
     public ACCOUNT getAccountById(@PathVariable("id") Long accountId) throws Throwable {
         return (ACCOUNT) accountService.getAccountById(accountId)
